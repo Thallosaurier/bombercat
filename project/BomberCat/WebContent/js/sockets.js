@@ -12,7 +12,7 @@ function openSocket() {
 		return;
 	}
 
-	webSocket = new WebSocket("ws://" + serverIP + ":8080/BomberCat/echo");
+	webSocket = new WebSocket("ws://" + serverIP + "/BomberCat/echo");
 
 	webSocket.onopen = function(event) {
 		if (event.data === undefined) {
